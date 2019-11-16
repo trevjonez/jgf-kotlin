@@ -72,12 +72,15 @@ bintray {
     name = project.name
     desc = project.description
     githubReleaseNotesFile = "CHANGELOG.md"
-    setLicenses("Apache-2.0")
-    setLabels("JsonGraphFormat", "jay-gee-eff", "jgf", "kotlin")
     githubRepo = "trevjonez/${project.name}"
+    issueTrackerUrl = "https://github.com/trevjonez/jgf-kotlin/issues"
+    publicDownloadNumbers = true
     vcsUrl = "git@github.com:trevjonez/${project.name}.git"
     version.apply {
       name = "${project.version}"
+      vcsTag = name
     }
+    setLicenses("Apache-2.0")
+    setLabels("JsonGraphFormat", "jay-gee-eff", "jgf", "kotlin")
   }
 }
