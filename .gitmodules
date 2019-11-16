@@ -1,0 +1,3 @@
+[submodule "json-graph-specification"]
+	path = json-graph-specification
+	url = git@github.com:jsongraph/json-graph-specification.git
